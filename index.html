@@ -2,7 +2,12 @@
 
 <html>
     <head>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -21,14 +26,139 @@
         <!-- quindi faccio un div principale con display flex
         poi un div per il nav uno per il centro e uno per la parte superiore  -->
 
-        <div class="container">
-            
+        <div id="general-container">
+            <!-- conterra tutto il main  -->
+            <!-- crreo la parte che sta a sinistra -->
+
+         <div id="wrap-up">
+            <div id="lateral-navbar">
+
+                <img class="image logo-small" src="spotify/img/logo-small.svg" alt=" logo-small">
+                <h1 id="spotify">Spotify</h1>
+
+                <!-- inizio menu -->
+                <div id="menu-comtainer">
+                    <div class="menu select-menu">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </div>
+
+                    <div class="menu unselect-menu">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Search</span>
+                    </div>
+                    
+                    <div class="menu unselect-menu">
+                        <i class="fa-solid fa-list"></i>
+                        <span>La tua libreria</span>
+                    </div>
+
+                    <div class="menu select-menu">
+                        <span>Playlist</span>
+                    </div>
+
+                    <div class=" menu unselect-menu">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Crea playlist</span>
+                    </div>
+
+
+                    <div id="elenco-playlist">
+                        <p>Nome playlist</p>
+                        <p>Nome playlist</p>
+                        <p>Nome playlist</p>
+                        <p>Nome playlist</p>
+                        <p>Nome playlist</p>
+                        <p>Nome playlist</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="main-content">
+                <div id="premium-container">
+                    <span id="premium-botton">attiva premium</span>
+                </div>
+
+                <h1 class="titolo">ascoltati di recente</h1>
+                <div class="riga ascoltati-recente">
+                   
+                    <div class="album-image">
+                        <img class="album-img" src="spotify/img/metal_lifting.jpg" alt="">
+                        <div class="album-hover">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                   
+                    <div class="album-image">
+                        <img class="album-img" src="spotify/img/stranger.jpeg" alt="">
+                        <div class="album-hover">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+
+                    <div class="album-image">
+                        <img class="album-img" src="spotify/img/split.jpeg" alt="">
+                        <div class="album-hover">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+
+                    <div class="album-image">
+                        <img class="album-img" src="spotify/img/sinister.jpeg" alt="">
+                        <div class="album-hover">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+
+                    <div class="album-image">
+                        <img class="album-img" src="spotify/img/mixdaily.jpeg" alt="">
+                        <div class="album-hover">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+
+                    <div class="album-image">
+                        <img class="album-img" src="spotify/img/player_left.jpg" alt="">
+                        <div class="album-hover">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h1 class="titolo secondo-titolo">creato per te</h1>
+                <div class="riga ascoltati-recente">
+                   
+                    <div class="album-image">
+                        <img class="album-img" src="spotify/img/einaudi.jpeg" alt="">
+                        <div class="album-hover">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+
+                    <div class="album-image">
+                        <img class="album-img" src="spotify/img/radar.jpeg" alt="">
+                        <div class="album-hover">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+
+              
+            </div>
+         </div>
+
+            <div id="foot-navbar">
+                <!-- conterra tutti gli ementi del player musicale e sara sempre un livello sopra alla sezione centrale -->
+                <div id="left-foot"></div>
+                <div id="center-foot"></div>
+                <div id="right-foot"></div>
+            </div>
         </div>
     </main>
-
-    <footer>
-         <!-- conterra tutti gli ementi del player musicale e sara sempre un livello sopra alla sezione centrale -->
-    </footer>
 
     </body>
 </html>

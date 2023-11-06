@@ -1,1 +1,231 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ #wrap-up{
+   background-color: rgb(72, 72, 72);
+   display: flex;
+   width: 100vw;
+   height: 100vh;
+ }
+
+
+ #lateral-navbar{
+   width: 180px;
+   background-color: rgb(0, 0, 0);
+   height: 100%;
+ }
+
+ #main-content{
+   width: calc(100% - 180px);
+   height: 100vh;
+   background-color: rgb(21, 17, 30);
+ }
+
+#premium-container{
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(16, 10, 30);
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  z-index: 10;
+  opacity: 50%;
+}
+
+#premium-botton{
+  /* color: white; */
+  margin-right: 10%;
+  /* padding: 5PX; */
+  padding: 5px 20px 5px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20%;
+  z-index: 20;
  
+}
+
+ #foot-navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  z-index: 10;
+  width: 100vw;
+  background-color: rgb(52, 52, 52);
+  height: 100px;
+ }
+
+ #left-foot, #right-foot{
+  width: 10%;
+  height: 80%;
+  background-color: aqua;
+ }
+
+ #center-foot{
+  width: 50%;
+  height: 80%;
+  background-color: aqua;
+ }
+
+ .logo-small{
+  margin-left: 20px;
+  width: 40px;
+ }
+
+ #spotify{
+  display: inline;
+  text-align: center;
+  color: white;
+}
+
+#menu-comtainer{
+  margin-top: 50px;
+  font-size: 1rem;
+  margin-left: 20px;
+  line-height: 3rem;
+  background-color: black;
+}
+
+.select-menu{
+  color: white;
+}
+
+.unselect-menu, #elenco-playlist{
+  color: darkgray;
+}
+
+#elenco-playlist{
+  overflow: scroll;
+  max-height: 200px;
+}
+
+.fa-plus{
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  background-color: darkgray;
+  width: 30px;
+  height: 30px;
+}
+
+.ascoltati-recente{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(21, 17, 30);
+}
+
+.titolo{
+  color: white;
+  margin-bottom: 50px;
+  margin-top: 10%;
+  margin-left: 20px;
+}
+
+.secondo-titolo{
+  margin-top: 5%;
+}
+
+.album-image{
+  background-color: aliceblue;
+  border: 1px solid black;
+  width: 15%;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.album-img{
+  width: 100%;
+  height: 100%;
+}
+
+/* effetti hover */
+.album-image .album-hover{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 70%;
+  display: none;
+}
+
+.album-image:hover .album-hover{
+  display: flex;
+
+  align-items: center;
+
+}
+
+.album-image:hover img{
+  display: none;
+}
+
+.fa-circle-play{
+  color: aliceblue;
+  font-size: 100px;
+  margin-left: 30%;
+}
+
+ @media all and (max-width: 480px){
+  /* phone */
+  #lateral-navbar{
+    width: 60px;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+  }
+
+  #main-content{
+    width: calc(100vw - 60px);
+    height: 100%;
+    background-color: rgb(21, 17, 30);
+  }
+
+  #spotify{
+    display: none;
+  }
+
+  .logo-small{
+    width: 30px;
+   }
+
+   .menu span{
+    display: none;
+   }
+
+   #elenco-playlist, .fa-plus{
+    /* overflow: scroll;
+    max-height: 200px; */
+    display: none;
+  }
+
+  .album-image{
+    background-color: aliceblue;
+    border-color: black;
+    width: 50%;
+    margin-left: 20px;
+    height: 180px;
+  }
+  
+ 
+ }
+
+ @media all and (max-width: 880px){
+
+
+  .album-image{
+    background-color: aliceblue;
+    border-color: black;
+    width: 22%;
+    margin-left: 20px;
+    height: 180px;
+  }
+
+ }
